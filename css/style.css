@@ -1,3 +1,12 @@
+:root {
+    --background: #290704;
+    --dark: #111;
+    --primary: #8b0000;
+    --primary-light: #ff4444;
+    --input-bg: #2d0b08;
+    --text: white;
+}
+
 @font-face {
     font-family: 'rdr2';
     src: url("fonts/chinese rocks rg.ttf");
@@ -5,14 +14,14 @@
 
 /* GENERAL */
 body {
-    background-color: #290704;
+    background-color: var(--background);
     margin: 0;
-    color: white;
+    color: var(--text);
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: #111;
+    background-color: var(--dark);
     overflow: hidden;
     padding: 10px;
     text-align: right;
@@ -28,6 +37,23 @@ body {
 
 .navbar a:hover {
     color: #ff4444;
+}
+
+a {
+    color: #da9999;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d06565;
+}
+
+a:hover {
+    color: var(--primary-light);
+}
+
+a:active {
+    color: var(--primary);
 }
 
 /* STARTSEITE HEADER */
@@ -76,10 +102,17 @@ body {
 
 article img {
     width: 200px;
+    float: left;
+    margin-right: 20px;
     height: auto;
     display: block;
     margin: 10px 0;
     border-radius: 10px;
+}
+
+article {
+    overflow: auto;
+    margin-bottom: 30px;
 }
 
 .places {
@@ -104,4 +137,89 @@ p {
 
 h1, h2, h3 {
     font-family: rdr2, serif;
+}
+
+/* FORMULAR */
+form {
+    background-color: #1a0503;
+    padding: 30px;
+    border: 3px solid #8b0000;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    border: 2px solid #8b0000;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: rdr2, serif;
+    font-size: 25px;
+    color: #ff4444;
+    padding: 0 10px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #444;
+    border-radius: 5px;
+    background-color: #2d0b08;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #ff4444;
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary);
+    color: white;
+    font-family: rdr2, serif;
+    font-size: 22px;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-light);
+}
+
+input[readonly] {
+    background-color: #555;
+}
+
+input:disabled {
+    background-color: #222;
+    color: #777;
 }

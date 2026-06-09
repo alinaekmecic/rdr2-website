@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Showcase</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <a href="Website.html">Home</a>
+        <a href="Gang.html">The Gang</a>
+        <a href="form.html">Form</a>
+        <a href="showcase.html">Showcase</a>
+    </div>
+
+    <div class="header-gang">
+        <h1 class="title-gang">Join The Gang</h1>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Join the Van der Linde Gang</h2>
+
+        <form action="https://gibm.becknet.ch/formular/formular.php" method="POST">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       required minlength="3" maxlength="30"
+                       autofocus>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com"
+                       required>
+
+                <br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                       required minlength="6">
+
+                <br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                       min="18" max="99">
+
+                <br><br>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+
+                <br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="+41 79 123 45 67">
+
+                <br><br>
+
+                <label for="website">Favorite Website:</label>
+                <input type="url" id="website" name="website"
+                       placeholder="https://">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Gang Preferences</legend>
+
+                <p>Favorite Character:</p>
+
+                <input type="radio" id="arthur" name="favorite_character" value="Arthur">
+                <label for="arthur">Arthur</label>
+
+                <input type="radio" id="john" name="favorite_character" value="John">
+                <label for="john">John</label>
+
+                <input type="radio" id="sadie" name="favorite_character" value="Sadie">
+                <label for="sadie">Sadie</label>
+
+                <br><br>
+
+                <label for="weapon">Favorite Weapon:</label>
+
+                <select id="weapon" name="weapon">
+                    <option value="revolver">Revolver</option>
+                    <option value="rifle">Rifle</option>
+                    <option value="shotgun">Shotgun</option>
+                </select>
+
+                <br><br>
+
+                <p>Activities:</p>
+
+                <input type="checkbox" id="hunting" name="activities" value="Hunting">
+                <label for="hunting">Hunting</label>
+
+                <input type="checkbox" id="fishing" name="activities" value="Fishing">
+                <label for="fishing">Fishing</label>
+
+                <input type="checkbox" id="robbery" name="activities" value="Robbery">
+                <label for="robbery">Robbery</label>
+
+                <br><br>
+
+                <label for="story">Why do you want to join?</label>
+                <br>
+
+                <textarea id="story" name="story"
+                          rows="5" cols="40"
+                          minlength="10"
+                          maxlength="300"
+                          placeholder="Tell us your story..."></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <label for="gangid">Gang ID:</label>
+            <input type="text" id="gangid" value="RDR2-1899" readonly>
+
+            <br><br>
+
+            <label for="disabledfield">Unavailable:</label>
+            <input type="text" id="disabledfield" value="Locked" disabled>
+
+            <br><br>
+
+            <input type="submit" value="Join the Gang">
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 RDR2 Website</p>
+    <p>
+        Contact:
+        <a href="mailto:rdr2fan@example.com">
+            rdr2fan@example.com
+        </a>
+    </p>
+    <p>
+        Phone:
+        <a href="tel:+41791234567">
+            +41 79 123 45 67
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
