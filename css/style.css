@@ -14,6 +14,11 @@
 
 /* GENERAL */
 body {
+    background-image: url("../img/6c818f0cd3447dddd6fee743d5668ea8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: var(--background);
     margin: 0;
     color: var(--text);
@@ -181,12 +186,6 @@ iframe {
 main {
     margin: 30px 0;
     padding: 40px;
-}
-
-body {
-    background-color: #120202;
-    margin: 0;
-    color: var(--text);
 }
 
 .page-container {
